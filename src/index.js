@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Person from './Person';
+import BookMain from './bookmain';
+ import Hello from './Hello';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Hello></Hello>
+    {/* <Person></Person> */}
+    {/* <BookMain></BookMain> */}
   </React.StrictMode>
 );
 
