@@ -6,14 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import Person from './Person';
 import BookMain from './bookmain';
  import Hello from './Hello';
+import Author from './Book/author';
+import Publisher from './Book/publisher';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Hello></Hello>
+    {/* <Hello></Hello> */}
     {/* <Person></Person> */}
     {/* <BookMain></BookMain> */}
+    {/* <Author></Author>
+    <Publisher></Publisher> */}
+     {/* <App /> */}
+     <BookMain></BookMain>
   </React.StrictMode>
 );
 

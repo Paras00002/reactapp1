@@ -4,15 +4,36 @@ import Reader from "./Book/reader";
 
 export default function BookMain(){
     return (
+
         <div>
-            <div style={{'margin-left':'200px'}}>
-                <h2>Book Information</h2>
-                <div>ISBN {book.isbn}</div>
-                <div>Name {book.bname}</div>
-            </div>
+            
+            <h1>Book Information</h1>
+           <table>
+  
+            <tr>
+        
+            <table>
+            
+                <tr>
+                    <td> ISBN {book.isbn}</td>
+                </tr>
+                <tr>
+                    <td>Name {book.bname}</td>
+                </tr>
+            </table>
+            </tr>
+            <tr>
             <Author></Author>
+            </tr>
+            <tr>
             <Publisher></Publisher>
+            </tr>
+            <tr>
             <Reader></Reader>
+            </tr>
+            
+      
+        </table>
         </div>
     )
 }
