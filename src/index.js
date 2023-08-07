@@ -15,6 +15,7 @@ import UserForm from './userForm';
 import Address from './Address';
 import UserCar from './UserCar';
 import { Cars } from './Car';
+import UserCounter from './UserCounter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +33,7 @@ root.render(
    <UserForm id="123243" name="Paras Singh"></UserForm>
    <Address city="Noida" state="UP" country="India"></Address>
    <UserCar car={Cars}></UserCar>
+   <UserCounter></UserCounter>
   </React.StrictMode>
 );
 
