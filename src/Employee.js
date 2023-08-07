@@ -1,32 +1,27 @@
-import Counter from "./Counter1";
 import EmployeeBook from "./EmployeeBook";
-
 import Product from "./Product";
-import Train from "./Train";
-
 import data from './bookdata';
+import Train from "./Train";
+import Counter from "./Counter1";
 
-export default function Employee(props){
-
-  return (
-
-    <div class="bg-dark text-light mt-5 w-50 p-5" style={{'margin-left':'350px'}}>
-      <div className="border border-dark bg-light" style={{'height':'300pt','color':'blue'}}>
-          <Counter></Counter>
-      </div>
-      Id is {props.id}<br></br>
-
-      Name is {props.name}<br></br>
-
-      <Product id='1000001' name='Shakti' cost='infinity'></Product>
-
-      <EmployeeBook book={data}></EmployeeBook>
-
-      <Train></Train>
-
-    </div>
-
-  )
-
+function Employee(props) {
+    return (
+        <div className="w-75 mt-5 p-5 bg-info"
+            style={{ 'marginLeft': '500pt' }}>
+            <div className="border border-dark bg-dark text-light ml-5 p-5 w-50" style={{ 'height': '770pt', 'color': 'blue' }}>
+                <Counter></Counter>
+            </div>
+            Id is {props.id}<br></br>
+            Name is {props.name}<br></br>
+            <Product id='1980908' name='garments' cost='12000'></Product>
+            <h2>Employee Book </h2>
+            <EmployeeBook book={data} ></EmployeeBook>
+            <p>Train ....</p>
+            <Train></Train>
+        </div>
+    )
 }
 
+
+
+export default Employee;
