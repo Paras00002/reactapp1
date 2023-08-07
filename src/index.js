@@ -8,6 +8,8 @@ import BookMain from './bookmain';
  import Hello from './Hello';
 import Author from './Book/author';
 import Publisher from './Book/publisher';
+import Employee from './Employee';
+import Product from './Product';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +21,9 @@ root.render(
     {/* <Author></Author>
     <Publisher></Publisher> */}
      {/* <App /> */}
-     <BookMain></BookMain>
+     {/* <BookMain></BookMain> */}
+     <Employee id="10001" name="ram kumar"></Employee>
+    
   </React.StrictMode>
 );
 
